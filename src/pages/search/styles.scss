@@ -1,0 +1,80 @@
+@import "../../assets/styles/colors.scss";
+.feed-search {
+  padding-bottom: 84px;
+  overflow-y: scroll;
+
+  .box-top-scroll {
+    padding-top: 20px;
+  }
+  .text-result {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #121212;
+  }
+  .v-filter {
+    
+    .v-btn-list {
+      width: 100%;
+      overflow-x: scroll;
+      padding-bottom: 8px;
+
+      button {
+        div {
+          width: max-content;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 20px;
+
+          text-align: center;
+          letter-spacing: -0.24px;
+
+          color: #000;
+        }
+      }
+    }
+  }
+  .btn-dropdown {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    display: flex;
+    align-items: center;
+
+    /* Brand/Bubble Purple */
+    color: $mint;
+
+    &.dropdown-toggle::after {
+      display: none !important;
+    }
+  }
+  .btn-dropdown-item {
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #121212;
+    &.selected {
+      color: $mint;
+    }
+  }
+}
+
+.btn-scroll-top {
+  background: linear-gradient(116.45deg, $mint -23.1%, $primary 250.18%);
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0.8;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}

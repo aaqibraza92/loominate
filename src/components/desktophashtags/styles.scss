@@ -1,0 +1,15 @@
+@import "../../assets/styles/colors.scss";
+
+/* Desktop css start */
+@media screen and (min-width:1200px){
+    .hashtags-list {
+        .hashtag {
+            > a {
+                display: inline-block;
+                margin-right: 5px;
+                font-size: 16px;
+                color: #FF2692;
+            }
+        }
+    }
+}

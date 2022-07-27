@@ -1,0 +1,91 @@
+@import "../../assets/styles/colors.scss";
+.post-detail {
+  padding-top: 76px;
+  padding-bottom: 84px;
+
+  .v-comment {
+    padding: 0 16px;
+  }
+  .no-comment {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #a0a0a0;
+  }
+}
+
+/* Desktop css start */
+.comment-input {
+  position: relative;
+  width: 100%;
+  .btn {
+    display: flex;
+    position: absolute;
+    right: 8px;
+    bottom: 18px;
+    border-radius: 100px;
+    padding-left: 1em;
+    padding-right: 1em;
+    align-items: center;
+    svg {
+      margin-left: 5px;
+      margin-top: -2px;
+    }
+  }
+}
+.comment-filter {
+  font-size: 12px;
+  .nav-link {
+    color: #A0A0A0;
+    &.active {
+      background: #03C5CC;
+    }
+  }
+}
+.anony-option {
+  margin-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+  .form-select {
+    max-width: 220px;
+    border-radius: 30px;
+  }
+}
+.comment-reply-sheet {
+  .form-select {
+    max-width: 220px;
+    border-radius: 30px;
+  }
+
+}
+@media screen and (min-width:1200px){
+  .post-detail {
+    .v-comment {
+      padding: 0;
+    }
+  }
+  .post-detail {
+    padding-top: 85px;
+  }
+  }
+
+  .comment-textarea {  
+    /* box-sizing: padding-box; */
+    overflow:hidden;
+    /* demo only: */
+    padding:10px 80px 10px 10px;
+    width:100%;
+    font-size:14px;
+    margin:10px auto;
+    display:block;
+    border-radius:20px;
+    border:1px solid #cccccc;
+    resize: none;
+  }
+  @media screen and (max-width:1199px){
+  .comment-wrapper {
+    padding: 0.5em;
+  }
+}

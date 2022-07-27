@@ -1,0 +1,78 @@
+@import "../../assets/styles/colors.scss";
+
+/* Desktop css start */
+@media screen and (min-width:1200px){
+    .kpoints, .stats {
+        padding: 0.5em 1.5em;   
+    }
+}
+@media screen and (min-width:1200px){
+.profile-sec {
+    .profile-persona {
+        position: relative;
+    }
+    .btn-edit {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #fcfcfc;
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.profile-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+.kpoints {
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 0.5em 0.75em;    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#03c5cc+0,4b008b+100 */
+    background: #03c5cc; /* Old browsers */
+    background: -moz-linear-gradient(left,  #03c5cc 0%, #2B57A8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #03c5cc 0%,#2B57A8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #03c5cc 0%,#2B57A8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03c5cc', endColorstr='#2B57A8',GradientType=1 ); /* IE6-9 */
+    strong {
+        color: #EFFF72;
+    }
+}
+.stats {width: 65%;
+    background-color: #ffffff;
+    justify-content: space-between;
+    font-weight: 500;
+    border-radius: 5px;
+    padding:0.5em 0.75em;
+    box-shadow: 0 5px 20px rgba($color: #000000, $alpha: 0.05);
+}
+.profile-box {
+    position: relative;
+    top: 2em;
+    strong {
+        font-size: 1.25em;
+    }
+}
+}
+@media screen and (min-width:1360px){
+.stats {
+    width: 70%;
+    justify-content: space-evenly;}
+}
+
+
+@media screen and (max-width:1440px){
+    
+.stats, .kpoints {
+    padding:0.5em 0.5em;
+    font-size: 13px;
+}
+}
+

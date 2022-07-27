@@ -1,0 +1,43 @@
+.header_area_alert {
+    /* 18273bec */
+    background-color: #FFF !important;
+    color: #FFFFFF !important;
+}
+
+.header_area_alert button span {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.modal-header .btn-close {
+    color: chartreuse !important;
+    background: none !important;
+
+}
+
+.modal- .btn-close::after {
+    content: '\02DF';
+    font-size: 65px;
+    font-weight: 100;
+    line-height: .65;
+    color: #000 !important;
+    opacity: 1;
+}
+
+.alertmodal_title{
+    padding: 0;
+    margin: 0;
+    font-size: 14pt;
+    font-weight: 700;
+    color: #242d38;
+}
+
+.modal-header {
+    padding: .5rem 1rem !important;
+    border-bottom: none !important;
+}
+
+.modal-footer {
+    padding: 0.4rem !important;
+    border-top: none !important;
+}

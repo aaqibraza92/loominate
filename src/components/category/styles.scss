@@ -1,0 +1,147 @@
+@import "../../assets/styles/colors.scss";
+
+.category-select-modal {
+  &.ant-modal {
+    position: relative;
+    width: 100vw !important;
+    max-width: unset;
+    margin: 0;
+    padding: 0;
+  }
+  .ant-checkbox-inner {
+    border: 2px solid $mint;
+  }
+  .ant-checkbox-checked {
+    .ant-checkbox-inner {
+      background-color: transparent;
+    }
+    .ant-checkbox-inner::after {
+      border: 2px solid $mint;
+      border-top: 0;
+      border-left: 0;
+      left: 19.5%;
+    }
+  }
+  .ant-checkbox + span {
+    color: $mint;
+  }
+  .ant-modal-content {
+    min-height: 100vh;
+  }
+  .ant-modal-body {
+    padding: 56px 0 0 0;
+  }
+  .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+  .ant-checkbox:hover .ant-checkbox-inner,
+  .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: $mint;
+  }
+
+  .btn-dropdown {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+
+    color: $mint;
+
+    &.dropdown-toggle::after {
+      display: none !important;
+    }
+  }
+  .btn-dropdown-item {
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #121212;
+    &.selected {
+      color: $mint;
+    }
+  }
+  .text-option {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #121212;
+    margin-bottom: 0;
+  }
+  .box-selected {
+    width: 100%;
+    overflow-x: scroll;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    min-height: 54px;
+
+    button {
+      div {
+        width: max-content;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+
+        text-align: center;
+        letter-spacing: -0.24px;
+
+        color: #fcfcfc;
+      }
+    }
+  }
+  .box-option {
+    padding: 8px 16px;
+  }
+  .category-item {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 111.1%;
+
+    color: #121212;
+
+    padding: 10px 20px;
+    border-bottom: 1px solid #f4f4f4;
+
+    &.selected {
+      background-color: $mint44;
+    }
+  }
+
+  .box-select-all {
+    padding-left: 16px;
+    margin: 8px 0;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .btn-add-category {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 111.1%;
+
+    color: $mint;
+    text-align: start;
+  }
+}
+
+.add-category-sheet {
+  padding: 20px 16px;
+  background: #ffffff;
+  // z-index: 999999 !important;
+  box-shadow: -25px -25px 25px rgba(0, 0, 0, 0.05);
+  h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #222222;
+  }
+  .btn-send {
+    border-radius: 100px;
+    padding: 0;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

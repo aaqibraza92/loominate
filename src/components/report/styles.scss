@@ -1,0 +1,129 @@
+@import "../../assets/styles/colors.scss";
+
+.report-user-sheet {
+  padding: 35px 20px;
+  background: #fff;
+  min-height: 450px;
+
+  .v-title {
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+  .icon-danger {
+    background: $danger;
+    height: 28px;
+    width: 28px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-item {
+    background: #f4f4f455;
+    border-radius: 5px;
+    text-align: start;
+    padding: 8px 10px;
+    .title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #222222;
+      margin-bottom: 0;
+      pointer-events: none;
+    }
+    .message {
+      font-size: 12px;
+      line-height: 20px;
+      color: #222222;
+      margin-bottom: 0;
+      pointer-events: none;
+    }
+    &.active {
+      background: $mint;
+    }
+  }
+
+  .box-other {
+    background: #f4f4f455;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    .title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #222222;
+    }
+  }
+}
+
+.mute-user-sheet {
+  padding: 35px 20px;
+  background: #fff;
+  min-height: 450px;
+
+  .v-title {
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+  .icon-danger {
+    background: $danger;
+    height: 28px;
+    width: 28px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-item {
+    background: #f4f4f455;
+    border-radius: 5px;
+    text-align: start;
+    padding: 8px 10px;
+    .title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #222222;
+      margin-bottom: 0;
+      pointer-events: none;
+    }
+    .message {
+      font-size: 12px;
+      line-height: 20px;
+      color: #222222;
+      margin-bottom: 0;
+      pointer-events: none;
+    }
+    &.active {
+      background: $primary;
+      .title {
+        color: #fff;
+      }
+      .message {
+        color: #fff;
+      }
+    }
+  }
+
+  .box-other {
+    background: #f4f4f455;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    .title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #222222;
+    }
+  }
+
+  .btn-submit {
+    background: linear-gradient(116.45deg, #4B008B -23.1%, #FF2692 250.18%);
+  }
+}

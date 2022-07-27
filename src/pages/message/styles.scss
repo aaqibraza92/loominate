@@ -1,0 +1,47 @@
+@import "../../assets/styles/colors.scss";
+
+.message-page {
+  padding-top: 76px;
+  background-color: #f5f8fd;
+
+  .v-content {
+    background: #ffffff;
+    box-shadow: 0px -20px 35px rgba(34, 34, 34, 0.03);
+    border-radius: 28px 28px 0px 0px;
+    padding: 30px 0 20px 0;
+    min-height: calc(100vh - 76px);
+
+    .text-empty {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+
+      text-align: center;
+
+      color: #a0a0a0;
+    }
+  }
+
+  .box-delete {
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 22px;
+    background: #F5F8FD;
+  }
+}
+
+.message-detail-page {
+  padding-top: 76px;
+  background: #f5f8fd;
+  overflow-y: scroll;
+
+  .v-content {
+    padding: 0 16px 86px 16px;
+  }
+}
+/* Desktop css start */
+@media screen and (min-width:1200px){
+  .message-bottom-bar {
+    border-radius: 0;
+  }
+}

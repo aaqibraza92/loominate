@@ -1,0 +1,44 @@
+@import "../../assets/styles/colors.scss";
+
+/* Desktop css start */
+@media screen and (min-width:1200px){
+    .cat-list {
+        .btn {
+            margin: 0 10px 10px 0;
+            font-size: 14px;
+        }
+        .btn-light {
+            color: rgb(3, 197, 204);
+            font-weight: 500;
+        }
+        .select-topic-dd {
+            .box-select-all {
+                margin-bottom: 10px;
+            }
+            .category-item {
+                padding: 5px;
+                &.selected {
+                    background-color: #DBFEFF;
+                }
+            }
+        }
+    }
+    .cat-items {
+        .category-item {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #000000;
+            margin: 5px;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            &.selected {
+                background-color: #DBFEFF;
+                color: #000000;
+            }
+        }
+    }
+    .cat-modals {
+        top: 80px !important;
+    }
+}

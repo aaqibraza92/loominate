@@ -1,0 +1,125 @@
+@import "../../assets/styles/colors.scss";
+
+.notification-modal {
+  padding: 0;
+  .ant-modal-content {
+    background: #ffffff;
+    box-shadow: 2px 5px 20px rgba(18, 18, 18, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .ant-modal-body {
+    padding: 18px 0 0 0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .text-title {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #121212;
+  }
+  .notification-list {
+    height: 70vh;
+    overflow-x: scroll;
+
+    .text-empty {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+
+      text-align: center;
+      color: #a0a0a0;
+      padding: 0 40px;
+    }
+  }
+}
+
+.notification-item {
+  padding: 16px;
+  border-bottom: 1px solid #f4f4f4;
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #222222;
+    b {
+      font-weight: 600;
+    }
+  }
+  .text-point {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    &.text-add {
+      color: $mint;
+    }
+    &.text-sub {
+      color: $danger;
+    }
+  }
+
+  .text-time {
+    white-space: pre;
+    font-size: 14px;
+  }
+
+  .text-message {
+    background: #f4f4f4;
+    border-radius: 3px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #0d253c;
+    padding: 8px;
+  }
+  .accepted-btn {
+    background: #666666 !important;
+  }
+}
+
+.notification-setting-sheet {
+  .main {
+    padding: 30px 20px;
+    min-height: 350px;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+
+      color: #222222;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 24px;
+      text-align: justify;
+      color: #000000;
+      .highlight {
+        font-weight: 600;
+        color: $primary;
+      }
+    }
+    .steps {
+      p {
+        margin-bottom: 4px;
+      }
+      .ant-switch-checked {
+        background-color: #64c567;
+      }
+      .ant-switch-loading,
+      .ant-switch-disabled {
+        opacity: 1;
+      }
+    }
+  }
+
+  .box-bottom {
+    padding: 16px 20px 20px 20px;
+    background: #ffffff;
+    box-shadow: 5px -5px 30px rgba(18, 18, 18, 0.1);
+  }
+}

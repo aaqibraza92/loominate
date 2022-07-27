@@ -1,0 +1,11 @@
+@import "../../assets/styles/colors.scss";
+
+/* Desktop css start */
+@media screen and (min-width:1200px){
+    .cat-list {
+        .btn {
+            margin: 0 10px 10px 0;
+            font-size: 14px;
+        }
+    }
+}

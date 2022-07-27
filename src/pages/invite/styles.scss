@@ -1,0 +1,121 @@
+@import "../../assets/styles/colors.scss";
+.invite-peers {
+  padding: 0;
+  .logo {
+    max-width: 70vw;
+    max-height: 100px;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .v-head {
+    height: 30vh;
+
+    img {
+      position: absolute;
+      z-index: 9;
+      margin-top: 3vh;
+      width: 70vw;
+      max-width: 300px;
+    }
+  }
+  .header {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #fcfcfc;
+  }
+  .card {
+    background: #ffffff;
+    box-shadow: 5px -5px 30px rgba(18, 18, 18, 0.1);
+    padding: 40px 30px;
+    border-radius: 28px 28px 0px 0px;
+    min-height: 70vh;
+
+    .text {
+      margin-bottom: 30px;
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+
+      color: #222222;
+
+      .highlight {
+        font-weight: 700;
+        color: $primary;
+      }
+
+      .highlight-mint {
+        font-weight: 700;
+        color: $mint;
+      }
+    }
+
+    .box-link {
+      border: 2px solid #f4f4f4;
+      box-sizing: border-box;
+      border-radius: 6px;
+      padding: 8px;
+      min-height: 100px;
+    }
+  }
+
+  .col-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-circle.bg-mint {
+    background-color: $mint;
+  }
+  .box-circle.bg-yellow {
+    background-color: $yellow;
+  }
+  .box-circle.bg-pink {
+    background-color: $pink;
+  }
+}
+/* Desktop css start */
+@media screen and (min-width:1200px){
+  .invite-peers {
+    display: flex;
+    justify-content: center;
+    > .row {
+      height: 100vh !important;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+    }
+    .v-head img {
+      width: 100vw;
+      max-width: 360px;
+  }
+  .card {
+    min-height: auto;
+    border-radius: 15px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    .box-link {
+      background-color: #ffffff;
+    }
+  }
+  }
+}

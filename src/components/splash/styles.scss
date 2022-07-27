@@ -1,0 +1,46 @@
+.splash {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+
+  &.hide {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .logo {
+    max-width: 65vw;
+    max-height: 100px;
+    margin-bottom: 6vh;
+  }
+  .loomer2 {
+    margin-top: 34px;
+  }
+  .text {
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #fcfcfc;
+  }
+  .monster {
+    text-align: center;
+    margin-bottom: 24px;
+    gap: 8px;
+    img {
+      width: 24vw;
+      max-width: 400px;
+    }
+  }
+}

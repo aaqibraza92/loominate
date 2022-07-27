@@ -1,0 +1,52 @@
+@import "../../assets/styles/colors.scss";
+
+/* Desktop css start */
+@media screen and (min-width:1200px){
+    .modal-body {
+        .action-sheet {
+            display: none;
+            &~ div {
+                position: static !important;
+                transform: none !important;
+                .action-sheet-post {
+                    overflow-y: auto;
+                }
+            }
+        }
+        .action-sheet-post {
+            .v-button {
+                background-color: transparent;
+                .btn {                    
+                path {
+                    fill: #000000 !important;
+                }
+                }
+            }
+        }
+    }
+    .post-type-btn {
+        margin-top: 15px;
+        list-style: none;
+        display: flex;
+        padding-left: 15px;
+        li {
+            padding: 10px 20px;
+            margin-right: 5px;
+            cursor: pointer;
+            border-radius: 10px;
+            svg {
+                margin-right: 5px; 
+            }
+            &.activeTab {
+                background-color: #03C5CC;
+                color: #ffffff;
+                font-weight: bold;
+                svg {                  
+                    path {
+                        fill:  #ffffff !important;
+                    }
+                }
+            }
+        }
+    }
+}

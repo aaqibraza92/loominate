@@ -1,0 +1,67 @@
+@import "../../assets/styles/colors.scss";
+
+.input-stacked {
+  position: relative;
+  .form-control {
+    border: 0;
+    border-bottom: 1px solid $mint;
+    border-radius: unset;
+    padding-left: 0;
+    padding-bottom: 8px;
+
+    font-family: Barlow;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #121212;
+  }
+  .form-label {
+    margin-bottom: 0;
+  }
+  .secure-icon {
+    position: absolute;
+    top: 34px;
+    border-radius: 6px;
+    right: 16px;
+    mix-blend-mode: multiply;
+  }
+  .box-suffix {
+    position: absolute;
+    top: 0;
+    right: 8px;
+  }
+  .text-error {
+    color: $danger;
+    font-weight: 600;
+    margin-top: 4px;
+    font-size: 13px;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.input-search {
+  position: relative;
+  background: #fcfcfc;
+  box-shadow: 5px 5px 20px rgba(18, 18, 18, 0.03);
+  border-radius: 5px;
+
+  .ant-input-affix-wrapper {
+    padding: 6px 12px;
+  }
+
+  .btn-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 8px;
+  }
+
+  .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+    border-color: $mint;
+  }
+}

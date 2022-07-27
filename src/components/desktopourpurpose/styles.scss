@@ -1,0 +1,18 @@
+@import "../../assets/styles/colors.scss";
+
+/* Desktop css start */
+@media screen and (min-width:1200px){
+    .blue-gradient {
+        color: #ffffff;        
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#03c5cc+0,4b008b+100 */
+    background: #03c5cc; /* Old browsers */
+    background: -moz-linear-gradient(left,  #03c5cc 0%, #2B57A8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #03c5cc 0%,#2B57A8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #03c5cc 0%,#2B57A8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03c5cc', endColorstr='#2B57A8',GradientType=1 ); /* IE6-9 */
+    h5 {
+        color: #ffffff;
+    }
+    }
+
+}

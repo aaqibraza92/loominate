@@ -1,0 +1,154 @@
+@import "../../assets/styles/colors.scss";
+.feed {
+  padding-bottom: 84px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  .box-top-scroll {
+    padding-top: 76px;
+    // &.admin {
+    //   padding-top: 120px;
+    // }
+  }
+
+  .box-top-scroll-cat {
+    padding-top: 0px;
+  }
+  .v-filter {
+    h4 {
+      margin-bottom: 0;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+
+      color: #121212;
+    }
+    .v-btn-list {
+      width: 100%;
+      overflow-x: scroll;
+      padding-bottom: 8px;
+
+      button {
+        div {
+          width: max-content;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 20px;
+
+          text-align: center;
+          letter-spacing: -0.24px;
+
+          color: #fff;
+        }
+      }
+    }
+  }
+  .btn-dropdown {
+    background: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    display: flex;
+    align-items: center;
+
+    /* Brand/Bubble Purple */
+    color: $mint;
+
+    &.dropdown-toggle::after {
+      display: none !important;
+    }
+  }
+  .btn-dropdown-item {
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #121212;
+    &.selected {
+      color: $mint;
+    }
+  }
+}
+
+.btn-scroll-top {
+  background: linear-gradient(116.45deg, $mint -23.1%, $primary 250.18%);
+  position: fixed;
+  bottom: 15px;
+  right: 16px;
+  opacity: 0.8;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.author-result {
+  margin-top: 1em;
+}
+#scrollableDiv {
+  height: auto !important;
+}
+.admin_user {
+  .regular-user {
+    display: none;
+  }
+}
+  .admin-user {
+    display: none;
+  }
+  .admin_user {
+    .admin-user {
+      display: block;
+    }
+  }
+.admin-user {
+  .dropdown-menu {
+    min-width: 24rem;
+  }
+}
+.hidden {
+  visibility: hidden;
+}
+.inset {
+  margin-left: 2.5rem;
+}
+hr {
+  opacity: 0.15;
+}
+/* Desktop css start */
+@media screen and (min-width:1200px){
+  .feed {
+    .box-top-scroll {
+      padding-top: 85px;
+    }
+  }
+  .post {
+    border-radius: 6px;
+    .btn-action {
+      font-size: 1rem;
+    }
+  }
+  .create-post {
+    cursor: pointer;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    .hstack {
+      justify-content: space-between;
+    }
+  }
+  .feed {
+    .btn-dropdown {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 5px 20px rgba($color: #000000, $alpha: 0.10) !important;
+      svg {
+        margin-left: 5px;
+      }
+    }
+  }
+}

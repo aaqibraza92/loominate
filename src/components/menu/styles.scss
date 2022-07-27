@@ -1,0 +1,60 @@
+@import "../../assets/styles/colors.scss";
+
+.menu-modal {
+  &.ant-modal {
+    position: relative;
+    width: 100vw !important;
+    max-width: unset;
+    margin: 0;
+    padding: 0;
+    display: inline-grid;
+    justify-content: flex-end;
+    // border-radius: 0;
+  }
+  .ant-modal-body {
+    padding: 64px 30px;
+  }
+  .ant-modal-content {
+    height: 100vh;
+    min-width: 300px;
+    width: 40vw;
+    background: #fcfcfc;
+    box-shadow: 0px -20px 35px rgba(34, 34, 34, 0.05);
+    border-radius: 25px 0px 0px 0px;
+  }
+  .btn-menu {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #121212;
+    text-align: left;
+
+    svg {
+      margin-top: -4px;
+      margin-right: 8px;
+    }
+
+    &.active {
+      color: $mint;
+    }
+  }
+  .text-username {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+
+    text-align: right;
+    color: #121212;
+  }
+  .btn-profile {
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: right;
+
+    color: #4b008b;
+  }
+}

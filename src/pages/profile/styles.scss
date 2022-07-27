@@ -1,0 +1,577 @@
+@import "../../assets/styles/colors.scss";
+
+.profile-detail {
+  padding-top: 64px;
+  .v-profile-info {
+    padding: 20px ;
+    background: #ffffff;
+
+    box-shadow: 5px -5px 30px rgba(18, 18, 18, 0.1);
+    border-radius: 0px 0px 28px 28px;
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #121212;
+  }
+
+  .text {
+    margin-bottom: 0;
+  }
+
+  .v-avatar {
+    width: 75px;
+    height: 75px;
+  }
+
+  .text-username {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: #121212;
+  }
+
+  .text-join {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+
+    color: #4b008b;
+  }
+
+  .text-description {
+    font-size: 14px;
+    line-height: 20px;
+    color: #121212;
+  }
+
+  .btn-chat {
+    padding: 8px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-point {
+    padding: 8px 16px;
+    background: linear-gradient(116.45deg, #4b008b -23.1%, #ff2692 250.18%);
+    /* Default Card Shadow */
+
+    box-shadow: 5px 5px 20px rgba(18, 18, 18, 0.03);
+    border-radius: 5px;
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+
+    .text-point {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 22px;
+
+      text-align: center;
+      color: #efff72;
+    }
+  }
+
+  .box-count {
+    background: #ffffff;
+
+    box-shadow: 5px 5px 20px rgba(18, 18, 18, 0.03);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #222222;
+
+    .text-number {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 22px;
+
+      color: #ff2692;
+    }
+  }
+
+  .v-filter {
+    padding: 0 20px;
+  }
+
+  .text-blocked {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: center;
+
+    color: #a0a0a0;
+  }
+
+  .btn-dropdown {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    display: flex;
+    align-items: center;
+
+    /* Brand/Bubble Purple */
+    color: $mint;
+
+    &.dropdown-toggle::after {
+      display: none !important;
+    }
+  }
+  .btn-dropdown-item {
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #121212;
+    &.selected {
+      color: $mint;
+    }
+  }
+}
+.admin_user {
+  .profile-detail {
+    .btn-dropdown {
+      color: #4b008b;
+    }
+}
+  }
+.profile-detail-menu {
+  width: 180px;
+  .btn-menu {
+    font-size: 14px;
+    line-height: 20px;
+    color: #121212;
+    text-align: start;
+  }
+  .btn-menu.btn-dg {
+    color: $danger;
+  }
+}
+
+.my-profile {
+  padding-bottom: 84px;
+  min-height: 100vh;
+  .bg-sky {
+    position: absolute;
+    background: url(../../assets/images/bg-sky.png);
+    mix-blend-mode: multiply;
+    background-size: 100% auto;
+    background-position: 0 -80px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+  }
+  .box-avatar {
+    position: relative;
+    .btn-edit {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: #fcfcfc;
+      border-radius: 100px;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box-loading {
+      background-color: #22222288;
+      border-radius: 100px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .box-head {
+    position: relative;
+    background: linear-gradient(116.45deg, $mint -23.1%, $primary 250.18%);
+    mix-blend-mode: multiply;
+
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    border-radius: 0px 0px 30px 30px;
+    min-height: 320px;
+
+    .box-info {
+      padding: 80px 34px 34px 34px;
+    }
+
+    .text {
+      margin-bottom: 0;
+    }
+
+    .v-avatar {
+      width: 75px;
+      height: 75px;
+    }
+
+    .text-username {
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 20px;
+
+      color: #fff;
+    }
+
+    .text-join {
+      margin-bottom: 0;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+
+      color: #efff72;
+    }
+
+    .text-description {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #fcfcfc;
+      margin-bottom: 0;
+    }
+  }
+
+  .box-number-count {
+    background: #03c5cc;
+    border-radius: 12px;
+    margin-bottom: -30px;
+    box-shadow: 5px 5px 20px rgba(18, 18, 18, 0.03);
+
+    .box-item {
+      padding: 12px 24px;
+
+      &.box-first,
+      &.box-active {
+        background: #4b008b;
+        border-radius: 12px;
+      }
+    }
+
+    .text-number {
+      font-size: 20px;
+      line-height: 22px;
+      text-align: center;
+
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .text-title {
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.87);
+      margin-bottom: 0;
+    }
+  }
+
+  .box-content {
+    margin-top: 48px;
+    padding: 0 20px;
+
+    .box-total-post {
+      background: #ffffff;
+      /* Default Card Shadow */
+
+      box-shadow: 5px 5px 20px rgba(18, 18, 18, 0.03);
+      border-radius: 5px;
+      padding: 8px;
+    }
+
+    .ant-collapse {
+      border: none;
+      background-color: transparent;
+    }
+    .ant-collapse > .ant-collapse-item {
+      margin-bottom: 16px;
+      border-bottom: none;
+      background: #ffffff;
+      box-shadow: 0px 20px 30px rgba(18, 18, 18, 0.05);
+      border-radius: 16px;
+    }
+    .ant-collapse-header {
+      padding: 22px 16px;
+    }
+    .ant-collapse-content {
+      border-top: unset;
+      border-radius: 0 0 16px 16px;
+    }
+
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 20px;
+      color: #03c5cc;
+    }
+    .box-space-bottom {
+      .ant-collapse-content > .ant-collapse-content-box {
+        padding-bottom: 0;
+      }
+      .ant-collapse-content-active {
+        margin-bottom: 48px;
+      }
+    }
+  }
+
+  .text-highlight {
+    font-weight: 600;
+    color: $primary;
+  }
+
+  .text-mint {
+    font-weight: 500;
+    color: #03c5cc;
+  }
+
+  .text-guide {
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    /* Neutrals/Black */
+
+    color: #121212;
+  }
+  .btn-guide {
+    text-align: start;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: $primary;
+    padding-left: 0;
+  }
+}
+
+.content-in-review-page {
+  background-color: #f5f8fd;
+  min-height: 100vh;
+  padding-bottom: 84px;
+
+  h6 {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #121212;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #121212;
+  }
+
+  .box-content {
+    padding: 76px 16px 16px 16px;
+    &.admin {
+      padding-top: 120px;
+    }
+  }
+  .btn-dropdown {
+    background: #ffffff;
+    box-shadow: 5px 5px 20px rgba(18, 18, 18, 0.03);
+
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    display: flex;
+    align-items: center;
+
+    /* Brand/Bubble Purple */
+    color: $primary;
+
+    &.dropdown-toggle::after {
+      display: none !important;
+    }
+  }
+  .btn-dropdown-item {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 16px;
+
+    color: #121212;
+    &.selected {
+      color: $primary;
+    }
+  }
+
+  .box-item {
+    padding: 16px 8px;
+    p {
+      margin-bottom: 0;
+    }
+    .text-number {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+
+      color: #121212;
+    }
+    .text-title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+
+      color: #4b008b;
+    }
+  }
+
+  .box-user {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .text-username {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+
+    color: #121212;
+  }
+
+  .box-summary {
+    background: #fcfcfc;
+
+    box-shadow: 5px 5px 20px rgba(18, 18, 18, 0.03);
+    border-radius: 5px;
+
+    &.box-report {
+      background: transparent;
+      box-shadow: none;
+      padding: 0;
+
+      .item-danger {
+        .text-title {
+          color: $primary;
+        }
+      }
+
+      .report-item {
+        background: #ffffff;
+        box-shadow: 5px 5px 20px rgba(18, 18, 18, 0.03);
+        padding: 12px 16px;
+
+        text-align: center;
+
+        p {
+          margin-bottom: 0;
+        }
+        .text-number {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 150%;
+    
+          color: #121212;
+        }
+        .text-title {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 24px;
+  
+          color: #4b008b;
+        }
+        .text-title-sm {
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 18px;
+  
+          color: #4b008b;
+        }
+      }
+    }
+  }
+
+  .box-tab {
+    border-bottom: 1px solid #f4f4f4;
+    .btn-tab {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 20px;
+
+      text-align: center;
+      letter-spacing: -0.24px;
+
+      color: #a0a0a0;
+      padding: 16px 0;
+
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+}
+.btn-group  {
+  margin: 0 -10px;
+  .btn-link {
+    margin: 0 -10px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px !important;
+    margin: 0 10px;
+    width: 50%;
+    &:last-child {
+      background-color: #ff2692;
+    }
+    &:first-child {
+      background-color: #4b008b;
+    }
+  }
+}
+
+/* Desktop css start */
+
+@media screen and (min-width:1200px){
+
+  .my-profile {
+    .bg-sky {
+      width: 100%;
+    }
+}
+.profile-detail {
+  padding-top: 85px;
+}
+.content-in-review-page {
+  .box-content {
+    padding: 0;
+  }
+}
+  }
+
+  @media screen and (max-width:767px){
+  .stat-desc {
+    display: block !important;
+  }
+}

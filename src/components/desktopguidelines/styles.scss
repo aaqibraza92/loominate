@@ -1,0 +1,32 @@
+@import "../../assets/styles/colors.scss";
+
+/* Desktop css start */
+@media screen and (min-width:1200px){
+    .accordion-item {
+        border: none;
+        .accordion-button {
+            color: #03C5CC;
+            font-weight: 500;
+            padding-left: 0;
+            padding-right: 0;
+            &:not(.collapsed) {
+                background-color: transparent;
+                box-shadow: none;
+                &::after {
+                    content: "-";
+                    transform: none;
+                }
+            }
+            &::after {
+                font-size: 30px;
+                content: "+";
+                background: none;
+                margin-top: -20px;
+            }
+        }
+        .accordion-body {
+            padding: 0;
+        }
+    }
+
+}

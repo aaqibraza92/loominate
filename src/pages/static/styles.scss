@@ -1,0 +1,22 @@
+
+/* Desktop css start */
+
+@media screen and (min-width:1200px){
+    .terms-of-use {
+        .box-term {
+            max-height: calc(70vh - 165px);
+            overflow-y: scroll;
+            padding: 2em;
+            background: #fff;
+            border: 1px solid #e4e4e4;
+            border-radius: 6px;
+        }
+        .row {
+            min-height: 100vh;
+            align-items: center;
+        }
+        .carousel-indicators {
+            display: none;
+        }
+    }
+  } 

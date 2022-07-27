@@ -1,0 +1,9 @@
+.modal.fade .modal-dialog {-webkit-transform: translate(0,0)scale(.5);transform: translate(0,0)scale(.5);
+    -webkit-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    }
+    .modal.show .modal-dialog {-webkit-transform: translate(0,0)scale(1);transform: translate(0,0)scale(1);
+      -webkit-transition: all 0.2s ease-out 0s;
+      transition: all 0.2s ease-out 0s;
+    }
+    

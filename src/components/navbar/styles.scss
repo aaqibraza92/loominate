@@ -1,0 +1,241 @@
+@import "../../assets/styles/colors.scss";
+
+.nav-bar-header {
+  position: fixed;
+  width: calc(100% + 1px);
+  z-index: 100;
+  top: 0;
+  background-color: #fff !important;
+
+  border-radius: 0px 0px 15px 15px;
+
+  button {
+    position: relative;
+    padding: 8px 4px;
+    .text-count {
+      position: absolute;
+      right: 0px;
+      font-weight: 600;
+      font-size: 8px;
+      line-height: 10px;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      border-radius: 24px;
+      background-color: $mint;
+      padding: 2px 4px;
+
+      &.text-count-message {
+        background-color: $pink;
+        color: #ffffff;
+      }
+    }
+  }
+  .btn-back {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222222;
+
+    .icon {
+      margin-top: -2px;
+      margin-right: 8px;
+    }
+  }
+  .text-user {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #121212;
+    margin-left: 8px;
+  }
+}
+
+.bottom-nav-bar {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% + 1px);
+  z-index: 100;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+
+  .v-menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    p {
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 12px;
+
+      text-align: center;
+      letter-spacing: 0.12px;
+
+      color: #222222;
+      text-transform: uppercase;
+    }
+
+    &.active {
+      p {
+        color: $mint;
+      }
+    }
+
+    .icon {
+      color: $mint;
+    }
+  }
+  .btn-add {
+    background-color: $mint;
+    border: 3px solid #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    margin-top: -24px;
+  }
+
+  .btn-tab {
+    width: 20vw;
+  }
+
+  .icon-circle {
+  }
+
+  &.bottom-bar-admin {
+    .btn-add {
+      background-color: $primary;
+    }
+
+    .btn {
+      &.active {
+        p {
+          color: $primary;
+        }
+      }
+
+      .icon {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.v-menu-center {
+  // background: #ffffff;
+  // box-shadow: 25px -25px 25px rgba(0, 0, 0, 0.03);
+  border-radius: 5px;
+  z-index: 500;
+
+  .v-circle {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $mint;
+    border-radius: 100px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px;
+
+      color: #121212;
+    }
+  }
+}
+
+.nav-bar-back {
+  .btn-back {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222222;
+
+    .icon {
+      margin-top: -2px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.nav-bar-admin {
+  background: linear-gradient(116.45deg, #4b008b -23.1%, #ff2692 250.18%);
+  border-radius: 0px 0px 15px 15px;
+  padding: 16px 12px;
+  &.hasBack {
+    background: #fff;
+  }
+  button {
+    position: relative;
+    padding: 8px 4px;
+    .text-count {
+      position: absolute;
+      right: 0px;
+      font-weight: 600;
+      font-size: 8px;
+      line-height: 10px;
+      letter-spacing: 0.04em;
+      color: $primary;
+      border-radius: 24px;
+      background-color: #efff72;
+      padding: 2px 4px;
+    }
+  }
+  .text-user {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fcfcfc;
+    margin-left: 0;
+  }
+  .text-role {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 111.1%;
+
+    color: #efff72;
+  }
+
+  .input-search {
+    background: #fcfcfc;
+
+    box-shadow: 5px 5px 20px rgba(18, 18, 18, 0.03);
+    border-radius: 5px;
+
+    margin-bottom: -30px;
+    .btn-right {
+      padding: 2px 4px;
+    }
+  }
+
+  .btn-back {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222222;
+
+    .icon {
+      margin-top: -2px;
+      margin-right: 8px;
+    }
+  }
+}

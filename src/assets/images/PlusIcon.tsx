@@ -1,0 +1,15 @@
+
+import React from 'react'
+
+function PlusIcon() {
+  return (
+    <div><svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="19" cy="19.0935" rx="19" ry="19.0127" fill="#03C5CC"/>
+<path d="M20.0557 20.1732V26.5108H17.9446V20.1732H11.6113V18.0607H17.9446V11.7231H20.0557V18.0607H26.3891V20.1732H20.0557Z" fill="#FCFCFC"/>
+</svg>
+    
+    </div>
+  )
+}
+
+export default PlusIcon

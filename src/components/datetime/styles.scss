@@ -1,0 +1,26 @@
+@import "../../assets/styles/colors.scss";
+
+.modal-date-range {
+  .ant-modal-content {
+    background: #fcfcfc;
+    border-radius: 8px;
+  }
+  .ant-modal-body {
+    padding: 48px 0 0 0;
+  }
+  .rdrDateDisplayWrapper {
+    display: none;
+  }
+
+  .btn-submit {
+    padding: 10px;
+    background: $primary;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

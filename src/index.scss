@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import './assets/styles/colors.scss';
+body {
+  margin: 0;
+  font-family: 'Barlow';
+  font-size: 16px;
+  overflow-y: scroll !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+
+  background: linear-gradient(56.9deg, #ffffff 1.09%, #f4f7ff 109.63%);
+}
+.m-screen.view-loading.false.false {
+  height: auto !important;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+.small, small {
+  font-size: 0.775em;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bg-gradient-app,
+.bg-gradient {
+  background: linear-gradient(168.04deg, $mint 2.27%, $primary 118.89%);
+}
+
+.m-screen {
+  width: 100%;
+  // height: 100vh;
+  overflow-x: unset !important;
+}
+.infinite-scroll-component {
+  overflow-x: hidden !important;
+  min-height: 70vh;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn {
+  border: none;
+  box-shadow: none !important;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+input {
+  box-shadow: none !important;
+}
+
+.btn-primary {
+  background: linear-gradient(116.45deg, $mint -23.1%, $primary 250.18%);
+  border-radius: 12px;
+
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  padding: 14px 30px;
+}
+.admin_user {
+  .btn-primary {
+    background: linear-gradient(116.45deg, #4b008b -23.1%, #ff2692 250.18%);
+  }
+}
+.text-error {
+  color: $danger;
+  font-weight: 600;
+}
+
+.bg-sky {
+  position: absolute;
+  background: url(./assets/images/bg-sky.png);
+  mix-blend-mode: multiply;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 110vw;
+  z-index: -1;
+}
+
+.top-message-error {
+  .ant-message-notice-content {
+    background: linear-gradient(116.45deg, $danger -23.1%, $mint 250.18%);
+    box-shadow: 0px 8px 20px rgba(16, 16, 16, 0.2);
+    border-radius: 5px;
+
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 12px;
+
+    color: #ffffff;
+
+    .icon {
+      margin-right: 8px;
+      margin-top: -2px;
+      color: #fff;
+    }
+    .message {
+      padding-top: 3px;
+    }
+  }
+}
+
+.top-message {
+  .ant-message-notice-content {
+    background: linear-gradient(116.45deg, $mint -23.1%, $primary 250.18%);
+    box-shadow: 0px 8px 20px rgba(16, 16, 16, 0.2);
+    border-radius: 5px;
+
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 8px 12px;
+
+    color: #ffffff;
+
+    .icon {
+      margin-right: 8px;
+      margin-top: -2px;
+      color: #fff;
+    }
+    .message {
+      padding-top: 3px;
+    }
+  }
+}
+
+.box-empty {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-align: center;
+  color: #a0a0a0;
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: $primary;
+}
+.ant-input-affix-wrapper:focus {
+  outline: none;
+}
+
+.ant-select:hover .ant-select-selector {
+  border-color: #a2a2a2 !important;
+  box-shadow: none !important;
+}
+
+.ant-select-dropdown {
+  z-index: 1100;
+}
+
+.modal-backdrop {
+  opacity: 0 !important;
+}
+
+.btn-dropdown {
+  background-color: #fff;
+}
+
+.logo-empty {
+  width: 40vw;
+  margin-bottom: 24px;
+  max-width: 300px;
+}
+.btn-success {
+  background-color: #03c5cc;
+  border-color: #03c5cc;
+  &:hover {
+    background-color: #2a59a9;
+    border-color: #2a59a9;
+  }
+  &:focus {
+    background-color: #2a59a9;
+    border-color: #2a59a9;
+  }
+}
+/*azhar css*/
+.form-control {
+  padding: 0.575rem 1.25rem;
+  border-radius: 3em;
+}
+.text-primary {
+  color: #4b008b !important;
+}
+a {
+  color: #4b008b;
+  &:hover {
+    color: #4b008b;
+  }
+}
+.nav-link {
+  color: #222222;
+  font-weight: 500;
+  &.active {
+    color: #ffffff;
+    border-radius: 10px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#03c5cc+0,4b008b+100 */
+    background: #03c5cc; /* Old browsers */
+    background: -moz-linear-gradient(
+      left,
+      #03c5cc 0%,
+      #2b57a8 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      left,
+      #03c5cc 0%,
+      #2b57a8 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to right,
+      #03c5cc 0%,
+      #2b57a8 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03c5cc', endColorstr='#2B57A8',GradientType=1 ); /* IE6-9 */
+    svg,
+    path,
+    circle {
+      fill: #ffffff;
+      color: #ffffff;
+    }
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  &:hover {
+    color: #4b008b;
+  }
+}
+.nav-pills {
+  .nav-link {
+    &.active {
+      background: #03c5cc !important;
+    }
+  }
+}
+.admin_user {
+  .nav-link.active,
+  .desktop-nav,
+  .kpoints,
+  .blue-gradient,
+  .btn-scroll-top,
+  .leaderboard-detail .box-head {
+    background: linear-gradient(116.45deg, #4b008b -23.1%, #ff2692 250.18%);
+  }
+  .create-post {
+    ellipse {
+      fill: #4b008b;
+    }
+  }
+  .feed {
+    .btn-dropdown {
+      color: #4b008b;
+    }
+  }
+  .accordion-item {
+    .accordion-button {
+      color: #4b008b;
+    }
+  }
+  .post {
+    cursor: pointer;
+    .text-votes {
+      color: #4b008b;
+    }
+  }
+  .cat-list {
+    .btn-light {
+      color: #4b008b;
+    }
+  }
+  .box-item {
+    svg {
+      path {
+        fill: #4b008b !important;
+      }
+    }
+  }
+  .bottom-nav-bar {
+    .btn.active {
+      p {
+        color: #4b008b;
+      }
+    }
+  }
+  .bottom-nav-bar {
+    .btn-add {
+      background: linear-gradient(116.45deg, #4b008b -23.1%, #ff2692 250.18%);
+    }
+  }
+  .menu-modal {
+    .btn-menu.active {
+      color: #4b008b;
+      path {
+        fill: #4b008b !important;
+      }
+    }
+  }
+  .input-search {
+    svg {
+      path {
+        fill: #4b008b !important;
+      }
+    }
+  }
+}
+.modal-body .action-sheet ~ div {
+  background: none !important;
+}
+.nav-pills .nav-link {
+  padding: 0.25em 1em;
+}
+/* Desktop css */
+.post {
+  cursor: pointer !important;
+}
+.desktop-only {
+  display: none;
+}
+.mobile-only {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .article-padding-top {
+    padding-top: 85px;
+  }
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+
+  .modal-backdrop {
+    opacity: 0.5 !important;
+  }
+
+  .box-avatar-list {
+    padding: 1em 3em;
+  }
+}
+
+#root ~ iframe {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-bar-admin {
+    .input-search {
+      margin-bottom: 0;
+    }
+  }
+  .nav-bar-header {
+    .hstack {
+      .vstack {
+        justify-content: center;
+      }
+    }
+  }
+  .dashboard-page {
+    .box-item {
+      padding: 10px 12px;
+  }
+  }
+  .dashboard-page {
+    h1 {
+      margin: 1em 0 !important ;
+    }
+    .box-summary {
+      .report-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .dark-bg {
+    .profile-persona {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  .dashboard-page {
+    .box-item {
+      .text-title {
+        font-size: 16px;
+      }
+      .text-number {
+        font-size: 18px;
+      }
+    }
+  }
+  .dashboard-page {
+    .box-summary.box-report {
+      .report-item {
+        .text-title {
+          font-size: 16px;
+        }
+        .text-number {
+          margin-right: 5px;
+        }
+      }
+    }
+    .box-user {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.middle-text-space {
+  line-height: 1.25;
+  &+ 
+  .btn {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+  }
+  .tenant-profile {
+    margin: 1em 0;
+    .white-box {
+      padding: 1em;
+    }
+  }
+  .small, small {
+    font-size: 0.675em;
+}
+}

@@ -1,0 +1,26 @@
+@import "../../assets/styles/colors.scss";
+
+.company-sheet {
+  .main {
+    padding: 30px 20px;
+    min-height: 400px;
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+      color: #222222 !important;
+    }
+    .btn-upload {
+      border-radius: 100px;
+      height: 48px;
+      width: 48px;
+      background: linear-gradient(116.45deg, #03C5CC -23.1%, #4B008B 250.18%);
+    }
+  }
+
+  .box-bottom {
+    padding: 16px 20px 20px 20px;
+    background: #ffffff;
+    box-shadow: 5px -5px 30px rgba(18, 18, 18, 0.1);
+  }
+}
