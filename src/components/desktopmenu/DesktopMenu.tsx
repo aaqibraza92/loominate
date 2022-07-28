@@ -19,31 +19,29 @@ const DesktopMenu = () => {
   const [feedFilterState, setFeedFilter] = useRecoilState(feedFilter);
   const [roleType, setRoleType] = useState("All");
   const history = useHistory();
+  const navigation = localStorage.getItem("navi");
 
+  useEffect(() => {
+    if(location.pathname==="/leaderboard"){
+      localStorage.setItem("navi", "leaderboard");
+    }else{
+    }
+  
+  }, [navigation]);
 
-  const onMenuClick  = (filter: any) => {
-    // console.log("aww",filter)
-    
-     setRoleType(filter.value);
+  const onMenuClick = (filter: any) => {
+    setRoleType(filter.value);
+    localStorage.setItem("navi", filter.value);
     const tenantName: any = localStorage.getItem("tenantName");
     history.push(routes.HomePage.replace(":tenant", tenantName));
     setFeedFilter(filter);
   };
 
-
-
-  //  useEffect(() => {
-  //   onMenuClick();
-  // }, [roleType]);
-
   return (
     <div className="white-box">
-      <ul>
+      <ul style={{paddingLeft:"0px",listStyle: "none"}}>
       <li>
-        {
-          console.log("aww",roleType)
-        }
-          <Link to="#" className={`nav-link ${roleType === "All" && "active"}`}
+          <Link to="#" className={`nav-link ${navigation === "All" && "active"}`}
            onClick={() =>
             onMenuClick({ name: "All", value: "All" })
           }>
@@ -62,7 +60,7 @@ const DesktopMenu = () => {
           </Link>
         </li>
         <li>
-          <Link to="#" className={`nav-link ${roleType === "Initiative" && "active"}`}
+          <Link to="#" className={`nav-link ${navigation === "Initiative" && "active"}`}
            onClick={() =>
             onMenuClick({ name: "Initiatives", value: "Initiative" })
           }>
@@ -73,7 +71,7 @@ const DesktopMenu = () => {
           </Link>
         </li>
         <li>
-          <Link to="#" className={`nav-link ${roleType === "Poll" && "active"}`}
+          <Link to="#" className={`nav-link ${navigation === "Poll" && "active"}`}
           onClick={() => onMenuClick({ name: "Polls", value: "Poll" })}>
           <Stack direction="horizontal" gap={3}>
             <IconPoll />
@@ -82,8 +80,8 @@ const DesktopMenu = () => {
           </Link>
         </li>
       </ul>
-
-      {/* <Nav className="flex-column">
+{/* 
+      <Nav defaultActiveKey="1" className="flex-column">
         <Nav.Link
           eventKey={1}
           onClick={() => onMenuClick({ name: "All", value: "All" })}
